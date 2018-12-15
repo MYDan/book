@@ -1,0 +1,127 @@
+{
+    "title" : "MYDan(mydan.org蚂蚁蛋运维助手)",
+    "links" : {
+        "sidebar" : {
+            "Home" : "http://www.mydan.org"
+        }
+    },
+    "variables": {
+        "contact": "lijinfeng2011@gmail.com"
+    },
+    "styles": {
+        "website": "styles/website.css",
+        "ebook": "styles/ebook.css",
+        "pdf": "styles/pdf.css",
+        "mobi": "styles/mobi.css",
+        "epub": "styles/epub.css"
+    },
+    "plugins": [
+        "-lunr",
+         "-search",
+         "search-plus",
+         "versions-select",
+         "splitter",
+         "tbfed-pagefooter",
+         "expandable-chapters-small",
+         "sectionx",
+         "github-buttons",
+         "simple-page-toc",
+         "anchors",
+         "todo",
+         "alerts",
+         "emphasize",
+         "anchor-navigation-ex",
+         "ad",
+         "ace",
+         "favicon",
+         "mermaid",
+         "terminal",
+         "github",
+         "copy-code-button",
+         "-sharing", 
+         "sharing-plus",
+         "chart",
+         "mermaid"
+        ],
+    "pluginsConfig": {
+        "fontsettings": {
+            "family": "serif",
+            "size": 1
+        },
+        "sectionx": {
+            "tag": "b"
+        },
+        "tbfed-pagefooter": {
+             "copyright":"Copyright 2017 - 2018.",
+             "modify_label": "该文件修订时间：",
+             "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "expandable-chapters-small":{},
+        "github-buttons": {
+            "buttons": [
+                {
+                    "user": "MYDan",
+                    "type": "follow",
+                    "size": "small",
+                    "width": "180",
+                    "count": true
+                },
+                {
+                    "user": "MYDan",
+                    "repo": "mayi",
+                    "type": "star",
+                    "size": "small"
+                }
+            ]
+        },
+        "simple-page-toc": {
+            "maxDepth": 3,
+            "skipFirstH1": true
+        },
+        "ad": {
+            "contentTop": "",
+            "contentBottom": ""
+        },
+        "favicon": {
+            "shortcut": "/assets/images/favicon.ico",
+            "bookmark": "/assets/images/favicon.ico",
+            "appleTouch": "/assets/images/favicon.ico",
+            "appleTouchMore": {
+                "120x120": "/assets/images/favicon.ico",
+                "180x180": "/assets/images/favicon.ico"
+            }
+        },
+        "terminal": {
+            "copyButtons": true,
+            "fade": false,
+            "style": "flat"
+        },
+        "github": {
+            "url": "https://github.com/MYDan"
+        },
+        "sharing": {
+            "douban": false,
+            "facebook": false,
+            "google": true,
+            "hatenaBookmark": false,
+            "instapaper": false,
+            "line": true,
+            "linkedin": true,
+            "messenger": false,
+            "pocket": false,
+            "qq": true,
+            "qzone": true,
+            "stumbleupon": false,
+            "twitter": false,
+            "viber": false,
+            "vk": false,
+            "weibo": true,
+            "whatsapp": false,
+            "all": [
+                "facebook", "google", "twitter",
+                "weibo", "instapaper", "linkedin",
+                "pocket", "stumbleupon"
+            ]
+        }
+    }
+}
