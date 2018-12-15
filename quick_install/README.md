@@ -4,7 +4,7 @@
 ```
  curl -L http://update.mydan.org|sudo bash
 ```
-> * 在所有的机器上安装mydan，安装目录是/opt/mydan
+> * 在所有的机器上安装mydan，安装目录是/opt/mydan
 
 ## 启动mydan服务
 ```
@@ -12,7 +12,7 @@
 ```
 > * mydan的agent启动端口为65111
 
-## 生成一对密钥
+## 生成一对密钥
 ```
 cd /opt/mydan/etc/agent/auth && \
 ssh-keygen -f mydan -P "" && \

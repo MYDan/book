@@ -6,4 +6,4 @@ Usage:
      Synchronize keys( id_rsa id_rsa.pub id_dsa id_dsa.pub authorized_keys ) to remote machines
      Only root users can execute
 ```
-> * 给远程机器添加ssh key
+> * 给远程机器添加ssh key

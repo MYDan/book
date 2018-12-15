@@ -10,7 +10,7 @@ Usage:
      $0 --help
 ```
 
-## 配置
+## 配置
 ```
 root@feng-pc:~# cat /opt/mydan/etc/util/conf/gateway
 pek:
@@ -24,5 +24,5 @@ aws:
     code: 'googlecode:$ENV{TOKEN_W}'
     assword: $ENV{PASSWD}
 ```
-> * ssh代理，把跳板机，或者把其他区域的网络出口代理管理起来，方便mydan go工具做登录操作
-> * mydan go 中的ssh命令可以配置成 ssh -o ProxyCommand='nc -x 127.0.0.1:1080 %h %p' username@server的方式来使用该代理
+> * ssh代理，把跳板机，或者把其他区域的网络出口代理管理起来，方便mydan go工具做登录操作
+> * mydan go 中的ssh命令可以配置成 ssh -o ProxyCommand='nc -x 127.0.0.1:1080 %h %p' username@server的方式来使用该代理

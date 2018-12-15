@@ -15,7 +15,7 @@ SYNOPSIS
          [--version]
          [--secret "x=1;xx=2" ]
 ```
-> * 批量操作工具， 其中exec是执行命令的插件，[查看更多插件](/tools/rcall.md)
+> * 批量操作工具， 其中exec是执行命令的插件，[查看更多插件](/tools/rcall.md)
 
 ### 例
 ```
@@ -55,7 +55,7 @@ SYNOPSIS
          --sp /path/foo* --dp /path/foo/
          --sp '/path/file1;/path/file2' --dp /path/foo/
 ```
-> * 批量同步文件的工具， [点击查看详情](/tools/grsync.md)
+> * 批量同步文件的工具， [点击查看详情](/tools/grsync.md)
 
 ```
 feng@feng-pc:~$ mydan grsync --src '127.0.0.1' --dst '127.0.0.1' --sp /tmp/file1 --dp /tmp/file2

@@ -7,7 +7,7 @@ SYNOPSIS
         [--max number (default 128)] \
 ```
 
-## 例子
+## 例
 ```
 root@feng-pc:~# mydan vssh -r 'localhost,127.0.0.1'
                         _
@@ -26,4 +26,4 @@ root (2)sh#
 
 ```
 
-> * 每一次执行命令都是一次远程调用，所以不支持cd，vim等命令
+> * 每一次执行命令都是一次远程调用，所以不支持cd，vim等命令

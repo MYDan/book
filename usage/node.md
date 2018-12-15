@@ -17,9 +17,9 @@ Commands:
 Run 'mydan.node COMMAND --help' for more information on a command.
 ```
 
-## 编辑机器配置文件
+## 编辑机器配置文件
 * 编辑自己的机器管理的配置文件,文件中的结构分成四层
-* 第一层是项目名或者cluster名，第二层为机器属性（比如机房信息，模块）， 第三层为操作对象（比如机器),第四层为资源状态（比如监控系统和发布系统中，状态为0的不处理）。
+* 第一层是项目名或者cluster名，第二层为机器属性（比如机房信息，模块）， 第三层为操作对象（比如机器),第四层为资源状态（比如监控系统和发布系统中，状态为0的不处理）。
 
 ```
 cat > hostdb <<EOF
@@ -35,20 +35,20 @@ EOF
 ## 加载配置文件
 
 ```
-mydan node load hostdb
+mydan node load hostdb
 ```
 
-## dump出机器信息
+## dump出机器信息
 ```
 mydan node dump  #dump出所有的机器信息
-mydan node dump project1 #dump出项目名为project1的机器信息
-mydan node dump project1 --compress #压缩显示
+mydan node dump project1 #dump出项目名为project1的机器信息
+mydan node dump project1 --compress #压缩显示
 mydan node dump --output /tmp/hostdb #dump到指定文件中
 ```
 
 ## 生成缓存cache
 ```
-mydan node cache
+mydan node cache
 ```
 ## 查看缓存
 ```
@@ -59,14 +59,14 @@ mydan node show project1
 
 ## 修改状态
 ```
-mydan node modfiy  --range 127.0.0.1 -v 3 -c project1 -t idc1  # 把 project1下的idc1中的127.0.0.1状态改成3
+mydan node modfiy  --range 127.0.0.1 -v 3 -c project1 -t idc1  # 把 project1下的idc1中的127.0.0.1状态改成3
 
 mydan node cache #加载到缓存中
 ```
 
 ## 删除
 ```
-mydan node purge --cluster project1 --table idc1 #删除project1下的所有idc1
+mydan node purge --cluster project1 --table idc1 #删除project1下的所有idc1
 ```
 
 ## 其他
@@ -79,7 +79,7 @@ mydan node purge --cluster project1 --table idc1 #删除project1下的所有idc
 
 有了机器管理，下面介绍一下操作对象描述
 
-从机器管理中获取操作对象
+从机器管理中获取操作对象
 
 #### 获取所有的机器
 ```
@@ -93,27 +93,27 @@ mydan node range '{==*==*??==1}'
 
 #### 通过插件的方式获取机器
 /opt/mydan/dan/node/callback 下放了node的插件
-默认情况下有两个插件，如果需要扩展可以自己开发
+默认情况下有两个插件，如果需要扩展可以自己开发
 
 插件list， 在文件中获取机器列表：
-如在目录/path/foo中有文件  a.list 和 b.list
+如在目录/path/foo中有文件  a.list 和 b.list
 cd 进入/path/foo目录运行
 ```
-mydan range '{%%list==a}' #获取a.list 的机器列表
-mydan range '{%%list==a,b}' #获取a.list 和b.list的机器列表
-mydan range '{%%list}' #获取所有以 .list文件为后缀的机器列表
+mydan range '{%%list==a}' #获取a.list 的机器列表
+mydan range '{%%list==a,b}' #获取a.list 和b.list的机器列表
+mydan range '{%%list}' #获取所有以 .list文件为后缀的机器列表
 ```
 
 node插件
 ```
-mydan range '{%%node}' #获取机器管理中全部机器
+mydan range '{%%node}' #获取机器管理中全部机器
 ```
 
-#### 表达式
+#### 表达式
 
 ```
-mydan range 'node{1~100}' #获取 node1 到node100的列表
-mydan range '{==project1==*??==*},10.10.10.10,-127.0.0.1,&/abc/' #获取project1下的所有机器，在加上10.10.10.10这个机器，在去掉127.0.0.1这个机器，在过滤出包涵字符abc的列表
+mydan range 'node{1~100}' #获取 node1 到node100的列表
+mydan range '{==project1==*??==*},10.10.10.10,-127.0.0.1,&/abc/' #获取project1下的所有机器，在加上10.10.10.10这个机器，在去掉127.0.0.1这个机器，在过滤出包涵字符abc的列表
 ```
 
 

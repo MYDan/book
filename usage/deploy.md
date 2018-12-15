@@ -2,10 +2,10 @@
 
 ## 路径
 > * 工具路径： /opt/mydan/dan/deploy/bin
-> * 发布流程路径：/opt/mydan/etc/deploy/conf
+> * 发布流程路径：/opt/mydan/etc/deploy/conf
 > * 发布过程配置：/opt/mydan/etc/deploy/mould
 
-一个conf下的配置对应一个发布流程。发布流程可以共用mould下的发布过程配置。
+一个conf下的配置对应一个发布流程。发布流程可以共用mould下的发布过程配置。
 
 
 ## 编辑发布过程配置
@@ -67,8 +67,8 @@ root@feng-pc:～# cat /opt/mydan/etc/deploy/mould/apps.test
 > * 发布过程是一个数组，表示发布某一组机器的一系列动作。
 > * title: 标题
 > * code: 对应code目录中的插件
-> * goon: 达到这个百分比才回继续往下走，否则会stuck，需要用ctrl去控制
-> * param： 就是插件需要的参数
+> * goon: 达到这个百分比才回继续往下走，否则会stuck，需要用ctrl去控制
+> * param： 就是插件需要的参数
 
 ## 编辑流程
 ```
@@ -103,7 +103,7 @@ macro:
 
 > maint: 选择发布步骤配置
     > * mould: 对应mould目录中的文件名
-    > * macro: 传递给mould的宏
+    > * macro: 传递给mould的宏
 > macro: conf 中的宏
 
 
@@ -158,8 +158,8 @@ node[1]: 127.0.0.1
 [error]: goon: 0.25 succ: 0 err:
 ```
 
-> * 其中apps.test 名字是conf中的文件名
-> * 可以在命令后添加宏参数，如 ./deploy apps.test "abc=123" 
+> * 其中apps.test 名字是conf中的文件名
+> * 可以在命令后添加宏参数，如 ./deploy apps.test "abc=123" 
 
 
 ## 查看stuck情况
@@ -173,9 +173,9 @@ stuck:
   deploy:
     '1': 'error:goon: 0.25 succ: 0 err:'
 ```
-## 解锁
+## 解锁
 
 ```
 root@feng-pc:/opt/mydan/dan/deploy/bin# ./ctrl  -R apps.test
 ```
-> * 解锁完后发布继续执行
+> * 解锁完后发布继续执行

@@ -6,4 +6,4 @@ SYNOPSIS
      Add or delete some users on the remote machine
      Only root users can execute
 ```
-> * 给远程机器添加或者删除账号
+> * 给远程机器添加或者删除账号

@@ -24,9 +24,9 @@ param:
       - '{DF}{/da1}{Use%} > 90'
 ```
 
-> * 每一个监控对应一个配置文件,默认情况下有grep,http,sysinfo, test的配置
+> * 每一个监控对应一个配置文件,默认情况下有grep,http,sysinfo, test的配置
 
-> * target: range表达式，描述监控的对象
+> * target: range表达式，描述监控的对象
 > * interval: 监控的频率
 > * code: 监控的插件
 > * param: 监控插件的参数
@@ -42,9 +42,9 @@ http: stoped.
 sysinfo: started.
 test: stoped.
 ```
-> * 这里会显示监控的任务的状态，是启动的还是停止的
+> * 这里会显示监控的任务的状态，是启动的还是停止的
 
-## 启动任务
+## 启动任务
 ```
 root@feng-pc:/opt/mydan/dan/monitorv2/bin# ./control --start sysinfo
 ```
@@ -76,7 +76,7 @@ collector: done.
 analysis: begin.
 ```
 
-## 停止任务
+## 停止任务
 ```
 root@feng-pc:/opt/mydan/dan/monitorv2/bin# ./control --stop sysinfo
 ```

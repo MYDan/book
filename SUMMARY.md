@@ -60,5 +60,5 @@
     * [reborn](tools/reborn.md)
     
 * [FAQ](faq/README.md)
-  * [window下安装](faq/window.md)
+  * [window下安装](faq/window.md)
 

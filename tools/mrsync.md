@@ -16,4 +16,4 @@ SYNOPSIS
          -2      Forces mrsync to try protocol version 2
 ```
 
-> * ssh协议和mydan协议都支持mrsync工具，通过mydan --dan 和mydan --box 来切换协议
+> * ssh协议和mydan协议都支持mrsync工具，通过mydan --dan 和mydan --box 来切换协议

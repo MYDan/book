@@ -14,5 +14,5 @@ localhost4.localdomain4 127.0.0.1
 test123.mydan.org       127.0.0.1
 ```
 
-> * 查询某个资源在哪个集群中
+> * 查询某个资源在哪个集群中
 > * mydan whois 和 mydan w 两个命令等同
