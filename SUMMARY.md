@@ -10,6 +10,8 @@
   * [核心工具](usage/tools.md)
   * [网络代理](usage/proxy.md)
   * [发布平台](usage/deploy.md)
+    * [应用操作](deploy/project.md)
+    * [发布管理](deploy/deploy.md)
   * [监控平台](usage/monitor.md)
     * [监控管理](monitor/collector.md)
     * [订阅管理](monitor/subscribe.md)
@@ -58,7 +60,7 @@
     * [diskSpaceControl](tools/diskSpaceControl.md)
     * [node](tools/node.md)
     * [reborn](tools/reborn.md)
-    
+
 * [FAQ](faq/README.md)
   * [window下安装](faq/window.md)
 

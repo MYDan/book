@@ -16,3 +16,14 @@ SYNOPSIS
           --debug
 ```
 > * 检查服务的小工具
+
+## 例
+```
+[root@feng-pc ~]# mydan check net.port.listen tcp 80 22
+[Error] tcp 80 not listen
+tcp 22 listen
+Check ERROR.
+[root@feng-pc ~]# echo $?
+255
+```
+> * 通过返回码来判断成功还是失败
