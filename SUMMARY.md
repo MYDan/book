@@ -41,6 +41,7 @@
     * [keys](tools/keys.md)
     * [config](tools/config.md)
     * [shell](tools/shell.md)
+    * [shellv2](tools/shellv2.md)
     * [alias](tools/alias.md)
     * [unalias](tools/unalias.md)
     * [sync](tools/sync.md)

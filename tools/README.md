@@ -27,6 +27,7 @@ Commands:
         * keys  给运程机器添加key信任.
         * config        mydan配置.
         * shell 获取远程机器反弹shell.
+        * shellv2 获取远程机器反弹shell的v2版本.
         * alias mydan内部使用的alias.
         * unalias       mydan内部使用的unalias.
         * sync  同步mydan的配置

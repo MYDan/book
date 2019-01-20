@@ -76,3 +76,4 @@ root@feng-pc:/home/feng#
 ```
 
 > * 获取远程shell是通过反弹shell的方式，如果隔离网络环境，这个功能需要控制机需要有公网ip
+> * mydan 2.0.0版本以上可以使用shellv2工具，这个不需要中控机有公网ip这个条件

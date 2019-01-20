@@ -1,12 +1,12 @@
-### 在window平台下使用手册
+# 在window平台下使用手册
 
-#### 简介
+## 简介
 ```
 window下需要借助cygwin，Cygwin是一个在windows平台上运行的类UNIX模拟环境。
 对于mydan来说使用方式和linux下基本一样，主要需要说明的是Cygwin的安装、包依赖，服务依赖。
 ```
 
-#### 安装Cygwin
+## 安装Cygwin
 ```
 到Cygwin官网https://www.cygwin.com 下载最新的setup.exe程序。下载后双击打开
 1. 选择安装方式：Install from Internet 
@@ -24,7 +24,7 @@ window下需要借助cygwin，Cygwin是一个在windows平台上运行的类UNIX
          cron: Vixie's cron 
 7. 点击下一步，完成安装.
 ```
-#### 启动相关服务
+## 启动相关服务
 ```
 mydan需要crontab服务来启动，所以需要把crontab服务做开机启动。（当然也可以开启启动的时候直接启动mydan的bootstrap）
 操作步骤如下：
@@ -42,19 +42,17 @@ mydan需要crontab服务来启动，所以需要把crontab服务做开机启动�
 6. 用cronevents 查看运行日志,如出现 “can't switch user context” 错误用命令：passwd -R 来设置密码 
 ```
 
-#### 安装mydan
+## 安装mydan
 ```
 和在linux上一样，在控制台中运行安装命令 curl -L install.mydan.org|bash 
 
 点击查看已有的编译好的perl,如果列表中没有合适您系统版本的编译好的perl，安装脚本会使用系统的perl，这样可能会话很长的时间，同时安装依赖模块的时候可能失败，如果您在新的系统版本中使用了mydan，欢迎上传您编译好的perl
 ```
 
-#### Cygwin参考资料
+## Cygwin参考资料
 ```
 https://www.cygwin.com 
 http://blog.chinaunix.net/uid-10540984-id-1629742.html 
 https://www.cnblogs.com/Li-Cheng/articles/4397208.html 
 https://www.cnblogs.com/yougewe/archive/2015/12/03/5016409.html 
 ```
-
-

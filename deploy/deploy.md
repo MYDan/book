@@ -317,3 +317,11 @@ path: /data/package/project1
     src: 'localhost'
 ```
 > * 同步数据
+> * src 默认为中控机本地
+> * timeout 超时时间，默认是60，单位秒
+> * max 并发数，默认500
+> * user 执行用户，默认root
+> * sudo 真实的执行用户
+> * chown 目标文件属主
+> * chmod 目标文件权限
+> * cc 等于1时继承源文件属性
