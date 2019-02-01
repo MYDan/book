@@ -12,6 +12,7 @@ SYNOPSIS
         [--chown root]
         [--chmod 777]
         [--cc]
+        [--delete]
          -1      Forces grsync to try protocol version 1
          -2      Forces grsync to try protocol version 2
          -3      Forces grsync to try protocol version 3
@@ -41,6 +42,7 @@ SYNOPSIS
 > * chown 文件属主
 > * chmod 文件权限
 > * cc 继承源文件的属性，如果指定了chown或chmod，以指定的为准
+> * delete 同步目录时这个参数会把目标目录上有，而源目录中没有的数据删掉，类似rsync工具的--delete
 
 > * 协议版本，使用默认值即可
 
