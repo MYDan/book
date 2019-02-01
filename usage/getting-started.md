@@ -34,6 +34,7 @@ Commands:
         * shell 获取远程机器反弹shell.
         * alias mydan内部使用的alias.
         * unalias       mydan内部使用的unalias.
+        * fastmd5       快速计算文件md5.
         * sync  同步mydan的配置
         * xtar  脚本和数据压缩工具.
         * git   git命令，添加了指定key功能.

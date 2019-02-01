@@ -44,6 +44,7 @@
     * [shellv2](tools/shellv2.md)
     * [alias](tools/alias.md)
     * [unalias](tools/unalias.md)
+    * [fastmd5](tools/fastmd5.md)
     * [sync](tools/sync.md)
     * [xtar](tools/xtar.md)
     * [git](tools/git.md)

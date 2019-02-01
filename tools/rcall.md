@@ -243,3 +243,12 @@ file version:001053
 ====================================================================
 ```
 > * version 获取mydan的版本,runtime 表示agent启动的版本，file表示本地文件更新到的版本，如果两个版本不一样，说明更新mydan后agent没有重启 
+
+### zipdir
+> * grsync 用于压缩目录的插件
+
+### unzipdir
+> * grsync 用于解压目录的插件
+
+### cleandir
+> * grsync 用于清理临时文件的插件
