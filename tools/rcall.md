@@ -10,6 +10,10 @@ SYNOPSIS
          [--env "A=123;B=abc" ]
          [--version]
          [--secret "x=1;xx=2" ]
+
+         [--immediately]
+         [--addr 10.10.10.10]
+         [--listen 9999]
 ```
 > * 远程调用mydan中agent插件的命令
 
@@ -24,6 +28,10 @@ SYNOPSIS
 > * env 远程机器会先设置这临时些环境变量再执行对应的插件
 > * version返回结构内包含远程机器mydan的版本
 > * secret 传递秘密字段，远程机器日志中不显示该字段，sexec和chpasswd插件会用到
+
+> * immediately 实时查看调用插件的输出内容，这个要看插件的实现是否有这个功能，目前scriptsx插件有这个功能
+> * addr 如果使用了immediately参数，addr参数用来控制日志内容连接到的ip地址，默认是客户中获取到的远程机器的ip。如果存在代理的情况，请指定成控制机的外网ip
+> * listen, 和addr参数类似，如果使用immediately参数的情况下指定的收取实时日志的端口。默认情况下在控制机上65112～65535的端口内找一个没在使用的
 
 ## 例
 ```
@@ -185,6 +193,9 @@ start
 ====================================================================
 ```
 > * 调用控制机上的脚本，会把脚本的内容传到远程去执行
+
+### scriptsx
+> * 和scripts功能类似，不过多了实时查看脚本标准输出的功能
 
 ### shell
 > * shell 远程shell,工具[mydan shell](/tools/shell.md)中有介绍
