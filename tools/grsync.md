@@ -22,6 +22,10 @@ SYNOPSIS
          --sp /path/     --dp /path/foo/
          --sp /path/foo* --dp /path/foo/
          --sp '/path/file1;/path/file2' --dp /path/foo/
+
+         [--immediately]
+         [--addr 10.10.10.10]
+         [--listen 9999]
 ```
 
 > * 全局同步文件
@@ -43,6 +47,10 @@ SYNOPSIS
 > * chmod 文件权限
 > * cc 继承源文件的属性，如果指定了chown或chmod，以指定的为准
 > * delete 同步目录时这个参数会把目标目录上有，而源目录中没有的数据删掉，类似rsync工具的--delete
+
+> * immediately 实时查看调用插件的输出内容，这个要看插件的实现是否有这个功能，目前scriptsx插件有这个功能
+> * addr 如果使用了immediately参数，addr参数用来控制日志内容连接到的ip地址，默认是客户中获取到的远程机器的ip。如果存在代理的情况，请指定成控制机的外网ip
+> * listen, 和addr参数类似，如果使用immediately参数的情况下指定的收取实时日志的端口。默认情况下在控制机上65112～65535的端口内找一个没在使用的
 
 > * 协议版本，使用默认值即可
 
