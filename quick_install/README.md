@@ -8,9 +8,14 @@
 
 ## 启动mydan服务
 ```
-/opt/mydan/dan/bootstrap/bin/bootstrap --install
+/opt/mydan/dan/bootstrap/bin/bootstrap --start
 ```
 > * mydan的agent启动端口为65111
+
+## 开机启动mydan服务
+```
+/opt/mydan/dan/bootstrap/bin/bootstrap --install
+```
 
 ## 生成一对密钥
 ```
