@@ -62,6 +62,7 @@
     * [diskSpaceControl](tools/diskSpaceControl.md)
     * [node](tools/node.md)
     * [reborn](tools/reborn.md)
+    * [svrInfo](tools/svrInfo.md)
 
 * [FAQ](faq/README.md)
   * [window下安装](faq/window.md)
