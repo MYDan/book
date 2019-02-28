@@ -47,7 +47,7 @@ Commands:
         * diskSpaceControl      控制磁盘使用空间在某个百分比.
         * node  机器管理.
         * reborn        重装系统.
-        * svrInfo       获取当前服务器的cpu/mem等信息.
+        * os       获取当前服务器的cpu/mem等信息.
 Run 'mydan COMMAND --help' for more information on a command.
 ```
 

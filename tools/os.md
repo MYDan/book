@@ -1,6 +1,6 @@
-# mydan svrInfo
+# mydan os
 ```
-root@feng-pc:/opt/mydan/mayi# mydan svrInfo
+root@feng-pc:/opt/mydan/mayi# mydan os
 CPU:
         model name:     Intel(R) Core(TM) i3-5010U CPU @ 2.10GHz
         cpu MHz:        1910.425
