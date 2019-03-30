@@ -20,6 +20,7 @@
   * [访问管理](usage/access.md)
     * [dashboard](access/dashboard.md)
     * [sso](access/sso.md)
+  * [仓库管理](usage/code.md)
   
 * [设计理念](philosophy/README.md)
 * [工具详解](tools/README.md)
@@ -61,6 +62,8 @@
     * [secure](tools/secure.md)
     * [diskSpaceControl](tools/diskSpaceControl.md)
     * [node](tools/node.md)
+    * [code](tools/code.md)
+    * [checkuser](tools/checkuser.md)
     * [reborn](tools/reborn.md)
     * [os](tools/os.md)
 
